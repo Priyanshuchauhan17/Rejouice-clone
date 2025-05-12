@@ -222,10 +222,8 @@ hr {
   #page5 svg{
     position: absolute;
     height: 73%;
-    animation: anime 3s linear infinite;
-    border: 4px solid #FF5F38;
-    border-radius: 150px;
     animation-delay: 0.1s;
+    border: none;
   }
   
     @keyframes anime {
@@ -444,3 +442,72 @@ font-family: new faimly;
 font-weight: 200;
 font-size: 1.1vw;
     }
+    /* ---------- MOBILE DEVICES (max width 768px) ---------- */
+@media (max-width: 768px) {
+    nav h3, nav h4 {
+      font-size: 4vw;
+    }
+  
+    #page1-contant h1 {
+      font-size: 14vw;
+      line-height: 16vw;
+    }
+  
+    #element-h1, #peragraph p, #peragraph6 p {
+      font-size: 5vw;
+      padding: 20px;
+    }
+  
+    #heading-1 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #page3-elemnts {
+      flex-direction: column;
+      height: auto;
+      gap: 4vw;
+    }
+  
+    #page3-elemnts .box {
+      width: 90%;
+      height: 50vh;
+    }
+  
+    .swiper-slide img {
+      width: 35%;
+    }
+  
+    #page8-contant h1 {
+      margin: 0 20px;
+      font-size: 6vw;
+      text-align: center;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu ul li a {
+      font-size: 5vw;
+    }
+  
+    #curser, #curser1 {
+      display: none;
+    }
+  
+    #page5 svg {
+      height: 90%;
+    }
+  
+    #page5-1 {
+      width: 100%;
+      height: auto;
+    }
+  
+    #page7 h1 {
+      font-size: 12vw;
+    }
+  }
+  
