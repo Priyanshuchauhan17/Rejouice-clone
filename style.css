@@ -434,6 +434,7 @@ font-family:new faimly;
         width: 100%;
 
     }
+    
     #page9 h3{
 position: absolute;
 bottom: 0px;
@@ -452,7 +453,6 @@ font-size: 1.1vw;
       font-size: 14vw;
       line-height: 16vw;
     }
-  
     #element-h1, #peragraph p, #peragraph6 p {
       font-size: 5vw;
       padding: 20px;

@@ -96,24 +96,35 @@ page2animation()
 // }
 // curserEffect1();
 
-var newCurser =  document.querySelector("#page5")
-var curser2 =  document.querySelector("#curser1")
-newCurser.addEventListener("mousemove",function (babe) {
-   curser2.style.left = babe.x+"px"
-   curser2.style.top = babe.y+"px"
-   newCurser.addEventListener("mouseenter",function () {
-    curser2,{
-        scale :1,
-        opacity:1
-    }
-   })
-   newCurser.addEventListener("mouseleave",function () {
-    curser2,{
-        scale:0,
-         opacity: 0
-    }
-   })
-})
+var newCurser = document.querySelector("#page5");
+var curser2 = document.querySelector("#curser1");
+
+newCurser.addEventListener("mousemove", function (babe) {
+    gsap.to(curser2, {
+        left: babe.clientX + "px",
+        top: babe.clientY + "px",
+        duration: 0.2,
+        ease: "power3.out"
+    });
+});
+
+newCurser.addEventListener("mouseenter", function () {
+    gsap.to(curser2, {
+        scale: 1,
+        opacity: 1,
+        duration: 0.3
+    });
+});
+
+newCurser.addEventListener("mouseleave", function () {
+    gsap.to(curser2, {
+        scale: 0,
+        opacity: 0,
+        duration: 0.3
+    });
+});
+
+
 function swiperanimanation() {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
@@ -126,6 +137,7 @@ function swiperanimanation() {
       });
     
 }
+
 swiperanimanation()
  var tl = gsap.timeline()
 
